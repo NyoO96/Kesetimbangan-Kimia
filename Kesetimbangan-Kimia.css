@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+@media only screen and (max-width: 800px){
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+    flex: 1;
+    text-align: left;
+
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.attention {
+    display: inline-block;
+    color: #7c00b1;
+    cursor: pointer;
+    padding: 6px 0px;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+.btn {
+    display: inline-block;
+    background: #7c00b1;
+    color: #ffef45;
+    cursor: pointer;
+    padding: 6px 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background-color: #7c00b191;
+}
+.btn::before {
+    content: attr(data-text);
+    padding-bottom: attr(data-text) 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 0;
+    color: #134099;
+    transition: width 0.9s;
+    white-space: nowrap;
+}
+.btn:hover::before {
+    width: 100%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50px;
+    min-width: 300px;
+}
+.col-2 img {
+    max-width: 200%;
+    padding: 50px 0;
+    margin-left: -50%;
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.header {
+    background: radial-gradient(#fff, #fba9ff);
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.title {
+    margin-top: -10px;
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after {
+    content: " ";
+    background: #fba9ff;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.col-3 {
+    margin-top: -10px;
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img {
+    margin-left: 5%;
+}
+
+.col-33 {
+    margin-top: -40px;
+    margin-left: -16.3%;
+    margin-right: -16%;
+    
+}
+
+.categories {
+    margin: 10px ;
+}
+
+.small-container {
+    max-width: 50%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555;
+    font-weight: normal;
+}
+
+.h3definisi {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.h3-konstanta-1a {
+    text-align: left;
+    margin-top: -10%;
+    margin-bottom: 20px;
+    margin-left: -12%;
+}
+
+ul {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h3-konstanta-1b {
+    margin-top: 10px;
+}
+
+.h3-konstanta-2a {
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: 20px;
+    margin-left: -12%;    
+}
+
+.h3-konstanta-2b {
+    margin-top: -5px;
+}
+
+.img-center {
+    margin-top: 0;
+    margin-left: 20%;
+}
+
+.h3-persamaan-setimbang {
+    margin-top: 15px;
+    margin-left: -12%;
+}
+
+.subbab-a {
+    margin-top: 9%;
+    color: #555;
+    margin-left: -16.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Lechatelier {
+    margin-left: -20%;
+}
+
+.h3-pergeseran-kesetimbangan {
+    margin-top: -30%;
+    margin-left: 15%;
+}
+
+.campuran-kesetimbangan {
+    Font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555;
+    margin-left: -8%;
+    font-weight: 100;
+    margin-top: -1.5%;
+}
+
+.h3-perubahan-konsentrasi {
+    text-align: left;
+    margin-top: 1.5%;
+    margin-bottom: 20px;
+    margin-left: -12%;    
+}
+
+ol {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subbab-b {
+    margin-top: 40px;
+    color: #555;
+    margin-left: -16.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*footer*/
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3 .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+a {
+    color: rgb(63, 200, 238);
+}
